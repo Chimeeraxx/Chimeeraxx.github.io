@@ -1,3 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #ecfbe6;
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  line-height: 1.75;
+  background: linear-gradient(180deg, #120916 0px, #241030 50%, #0d0811 100%);
+  color: #f0e8f8;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+header {
+  margin-bottom: 10px;
+}
+
+.banner {
+  min-height: 400px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  position: relative;
+  background:
+    linear-gradient(rgba(20, 8, 28, 0.55), rgba(54, 20, 74, 0.7)),
+    url("images/kuromi.jpg") center/cover no-repeat;
+  border-bottom: 5px solid #b66dff;
+  margin-bottom: 40px;
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 56px;
+  color: #ffffff;
+  background-color: rgba(27, 12, 38, 0.72);
+  padding: 18px 28px;
+  border-radius: 14px;
+  border: 2px solid #c084fc;
+  text-shadow: 0 0 10px rgba(192, 132, 252, 0.5);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  width: max-content;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: rotate(-5deg);
+}
+
+.intro {
+  font-size: 19px;
+  color: #f3dcff;
+  background-color: rgba(27, 12, 38, 0.68);
+  padding: 14px 22px;
+  border-radius: 12px;
+  border: 1px solid #a855f7;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+  max-width: 800px;
+  margin-left: 40px;
+  margin-top: 60px;
+  transform: rotate(-10deg);
+}
+
+main {
+  padding-bottom: 50px;
+}
+
+article {
+  background: rgba(31, 16, 43, 0.95);
+  padding: 30px 40px;
+  border-radius: 18px;
+  border: 2px solid #7e3af2;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+section {
+  margin-top: 40px;
+  position: relative;
+}
+
+h2 {
+  font-size: 34px;
+  color: #e7c3ff;
+  padding: 12px 18px;
+  border-left: 8px solid #d946ef;
+  background: linear-gradient(90deg, rgba(126, 58, 242, 0.22), rgba(36, 16, 48, 0.2));
+  margin-top: 0;
+  position: relative;
+  top: -10px;
+}
+
+h3 {
+  margin-top: 24px;
+  font-size: 22px;
+  color: #d8b4fe;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 6px;
+}
+
+p {
+  margin: 18px 0;
+  font-style: oblique;
+}
+
+ul {
+  margin: 25px 0;
+  padding: 20px 22px 20px 40px;
+  background: linear-gradient(135deg, #2a1638, #4a2167);
+  border-left: 6px solid #d946ef;
+  border-radius: 10px;
+  position: relative;
+}
+
+li {
+  margin-bottom: 12px;
+  font-style: oblique;
+  list-style-type: armenian;
+}
+
+footer {
+  margin-top: 40px;
+  background: linear-gradient(135deg, #140b1b, #34184a);
+  border-top: 4px solid #b66dff;
+}
+
+footer .container {
+  padding: 22px 15px;
+  text-align: center;
+  color: #f0dcff;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    min-height: 300px;
+    padding: 30px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 38px;
+    padding: 14px 20px;
+    position: static;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .intro {
+    font-size: 16px;
+    padding: 12px 18px;
+    margin-top: 0;
+    margin-left: 0;
+    transform: none;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  article {
+    padding: 24px;
+  }
+
+  h2 {
+    font-size: 26px;
+    top: 0;
+  }
+
+  h3 {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .banner {
+    min-height: 260px;
+    padding: 20px 10px;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+    padding: 10px 14px;
+  }
+
+  .intro {
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+
+  article {
+    padding: 18px;
+  }
+
+  ul {
+    padding: 18px 18px 18px 30px;
+  }
 }
