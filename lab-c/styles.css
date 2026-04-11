@@ -1,0 +1,102 @@
+body {
+  font-family: "Comic Sans MS", "Arial", sans-serif;
+  background-color: #8D9EC6;
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+
+#getLocation,
+#saveButton {
+  background-color: #8367C7;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin: 5px;
+}
+
+#getLocation:hover,
+#saveButton:hover {
+  background-color: #2E2D4D;
+  transform: scale(1.1);
+}
+
+#map, #rasterMap {
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+#map {
+  overflow: hidden;
+}
+
+#rasterMap {
+  display: none;
+  border: 2px solid black;
+}
+
+#bigBoard {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(4, 75px);
+  gap: 0;
+  margin: 0;
+}
+
+#puzzleContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 150px);
+  grid-template-rows: repeat(4, 75px);
+  gap: 5px;
+  margin: 0;
+}
+
+.board-slot {
+  width: 150px;
+  height: 75px;
+  border: 2px dashed white;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.puzzle-piece {
+  width: 150px;
+  height: 75px;
+  border: 1px solid #333;
+  background-repeat: no-repeat;
+  border-radius: 0;
+  transition: 0.2s;
+  box-sizing: border-box;
+}
+
+.puzzle-piece:hover {
+  transform: scale(1.05);
+}
+.board-slot.drag-over,
+#puzzleContainer.drag-over {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.puzzle-piece.dragging {
+  opacity: 0.6;
+  cursor: grabbing;
+}
+
+.puzzle-piece.correct {
+  outline: 3px solid limegreen;
+  outline-offset: -3px;
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marta Milka (57728) - PTW LAB C</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="leaflet-1.9.4/leaflet.css" />
+    <script src="leaflet-1.9.4/leaflet-src.js"></script>
+    <script src="leaflet-1.9.4/leaflet-providers.js"></script>
+    <script src="leaflet-1.9.4/leaflet-image.js"></script>
+
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+
+<h1>Puzzle Map</h1>
+
+<div id="map"></div>
+
+<canvas id="rasterMap" width="600" height="300"></canvas>
+
+<button id="getLocation">Moja lokalizacja</button>
+<button id="saveButton">Pobierz mapę</button>
+
+<div id="positionInfo">
+    <strong>Latitude:</strong> <span id="latitude"></span><br>
+    <strong>Longitude:</strong> <span id="longitude"></span>
+</div>
+
+<div id="bigBoard">
+    <div id="board">
+        <div class="board-slot"></div>
+        <div class="board-slot"></div>
+        <div class="board-slot"></div>
+        <div class="board-slot"></div>
+        <div class="board-slot"></div>
+        <div class="board-slot"></div>
+        <div class="board-slot"></div>
+        <div class="board-slot"></div>
+        <div class="board-slot"></div>
+        <div class="board-slot"></div>
+        <div class="board-slot"></div>
+        <div class="board-slot"></div>
+        <div class="board-slot"></div>
+        <div class="board-slot"></div>
+        <div class="board-slot"></div>
+        <div class="board-slot"></div>
+    </div>
+
+    <div id="puzzleContainer">
+        <div class="puzzle-piece" draggable="true"></div>
+        <div class="puzzle-piece" draggable="true"></div>
+        <div class="puzzle-piece" draggable="true"></div>
+        <div class="puzzle-piece" draggable="true"></div>
+        <div class="puzzle-piece" draggable="true"></div>
+        <div class="puzzle-piece" draggable="true"></div>
+        <div class="puzzle-piece" draggable="true"></div>
+        <div class="puzzle-piece" draggable="true"></div>
+        <div class="puzzle-piece" draggable="true"></div>
+        <div class="puzzle-piece" draggable="true"></div>
+        <div class="puzzle-piece" draggable="true"></div>
+        <div class="puzzle-piece" draggable="true"></div>
+        <div class="puzzle-piece" draggable="true"></div>
+        <div class="puzzle-piece" draggable="true"></div>
+        <div class="puzzle-piece" draggable="true"></div>
+        <div class="puzzle-piece" draggable="true"></div>
+    </div>
+</div>
+
+</body>
+</html>
