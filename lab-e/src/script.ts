@@ -18,15 +18,15 @@ const appState: AppState = {
     styles: {
         "Hello Kitty style": {
             label: "Hello Kitty style",
-            file: "style-1.css"
+            file: "public/style-1.css"
         },
         "Kuromi style": {
             label: "Kuromi style",
-            file: "style-2.css"
+            file: "public/style-2.css"
         },
         "Simple background": {
             label: "Simple background",
-            file: "style-3.css"
+            file: "public/style-3.css"
         }
     }
 };
