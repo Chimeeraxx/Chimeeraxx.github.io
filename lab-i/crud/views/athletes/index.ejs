@@ -1,0 +1,29 @@
+<%- include("../partials/header", { title: title, bodyClass: "index" }) %>
+
+<h1>Athletes List</h1>
+
+<a class="button" href="/athletes/create">Create new</a>
+
+<ul class="index-list">
+    <% athletes.forEach(function (athlete) { %>
+        <li class="card">
+            <h3><%= athlete.name %></h3>
+
+            <p>
+                <strong>Sport:</strong> <%= athlete.sport_name %><br>
+                <strong>Age:</strong> <%= athlete.age %>
+            </p>
+
+            <ul class="action-list">
+                <li>
+                    <a href="/athletes/<%= athlete.id %>">Details</a>
+                </li>
+                <li>
+                    <a href="/athletes/<%= athlete.id %>/edit">Edit</a>
+                </li>
+            </ul>
+        </li>
+    <% }) %>
+</ul>
+
+<%- include("../partials/footer") %>

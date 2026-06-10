@@ -1,0 +1,24 @@
+<%- include("../partials/header", { title: title, bodyClass: "edit" }) %>
+<h1>Edit Athlete <%= athlete.name %> (<%= athlete.id %>)</h1>
+
+<form action="/athletes/<%= athlete.id %>/edit" method="post" class="edit-form card">
+    <%- include("_form", { athlete: athlete }) %>
+</form>
+
+<ul class="action-list">
+    <li>
+        <a href="/athletes">Back to list</a>
+    </li>
+    <li>
+        <form action="/athletes/<%= athlete.id %>/delete" method="post">
+            <input
+                    class="danger"
+                    type="submit"
+                    value="Delete"
+                    onclick="return confirm('Are you sure?')"
+            />
+        </form>
+    </li>
+</ul>
+
+<%- include("../partials/footer") %>

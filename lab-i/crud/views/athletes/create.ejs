@@ -1,0 +1,11 @@
+<%- include("../partials/header", { title: title, bodyClass: "edit" }) %>
+
+<h1>Create Athlete</h1>
+
+<form action="/athletes/create" method="post" class="edit-form card">
+    <%- include("_form", { athlete: athlete }) %>
+</form>
+
+<a href="/athletes">Back to list</a>
+
+<%- include("../partials/footer") %>
