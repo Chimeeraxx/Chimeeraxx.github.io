@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}Athlete List{% endblock %}
+{% block body_class %}index{% endblock %}
+
+{% block content %}
+    <h1>Athletes List</h1>
+
+    <a href="{{ url_for('athlete_create') }}">Create new</a>
+
+    <ul class="index-list">
+        {% for athlete in athletes %}
+            <li>
+                <h3>{{ athlete.name }}</h3>
+
+                <p>
+                    Sport: {{ athlete.sport_name }}<br>
+                    Age: {{ athlete.age }}
+                </p>
+
+                <ul class="action-list">
+                    <li>
+                        <a href="{{ url_for('athlete_show', athlete_id=athlete.id) }}">Details</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('athlete_edit', athlete_id=athlete.id) }}">Edit</a>
+                    </li>
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

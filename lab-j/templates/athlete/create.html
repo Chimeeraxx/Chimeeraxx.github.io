@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}Create Athlete{% endblock %}
+{% block body_class %}edit{% endblock %}
+
+{% block content %}
+    <h1>Create Athlete</h1>
+
+    <form action="{{ url_for('athlete_create') }}" method="post" class="edit-form">
+        {% set athlete = none %}
+        {% include "athlete/_form.html" %}
+    </form>
+
+    <a href="{{ url_for('athlete_index') }}">Back to list</a>
+{% endblock %}
