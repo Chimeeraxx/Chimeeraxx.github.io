@@ -1,0 +1,19 @@
+<%- include("../partials/header", { title: title, bodyClass: "show" }) %>
+
+<h1><%= athlete.name %></h1>
+
+<article class="card">
+    <p><strong>Sport:</strong> <%= athlete.sport_name %></p>
+    <p><strong>Age:</strong> <%= athlete.age %></p>
+</article>
+
+<ul class="action-list">
+    <li>
+        <a href="/athletes">Back to list</a>
+    </li>
+    <li>
+        <a href="/athletes/<%= athlete.id %>/edit">Edit</a>
+    </li>
+</ul>
+
+<%- include("../partials/footer") %>

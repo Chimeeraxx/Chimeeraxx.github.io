@@ -1,0 +1,256 @@
+body {
+    min-height: 100vh;
+    background-color: #fff5fb;
+    background-image:
+        radial-gradient(circle at 20px 20px, rgba(255, 105, 180, 0.16) 0 7px, transparent 8px),
+        radial-gradient(circle at 70px 70px, rgba(255, 182, 213, 0.20) 0 9px, transparent 10px),
+        radial-gradient(circle at 45px 85px, rgba(255, 255, 255, 0.9) 0 5px, transparent 6px),
+        linear-gradient(135deg, #fff5fb, #ffe3f1, #fff9fd);
+    background-size:
+        110px 110px,
+        110px 110px,
+        110px 110px,
+        cover;
+    background-attachment: fixed;
+    color: #4a2c3a;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.app-navbar,
+.navbar {
+    background: linear-gradient(90deg, #ff8fc7, #ffb6d9, #ffd6e8);
+    box-shadow: 0 6px 18px rgba(255, 105, 180, 0.25);
+    border-bottom: 3px solid #fff;
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(150, 50, 100, 0.25);
+}
+
+.navbar-brand::before {
+    content: "🎀 ";
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    border-radius: 999px;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+/* główny obszar strony */
+.page-wrapper {
+    min-height: calc(100vh - 130px);
+}
+
+.container {
+    max-width: 1100px;
+}
+
+/* karty */
+.card,
+.page-card {
+    background: rgba(255, 255, 255, 0.88);
+    border: 3px solid #ffd1e6;
+    border-radius: 28px;
+    box-shadow: 0 14px 35px rgba(255, 105, 180, 0.18);
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 28px;
+}
+
+/* nagłówki */
+h1,
+.h3,
+.page-title {
+    color: #d63384;
+    font-weight: 800;
+}
+
+h1::after,
+.h3::after {
+    content: "  ♡";
+    color: #ff8fc7;
+}
+
+.text-muted,
+.page-subtitle {
+    color: #9b6a80 !important;
+}
+
+.table {
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.table-dark {
+    --bs-table-bg: #ff8fc7;
+    --bs-table-color: #ffffff;
+    border-color: #ffb6d9;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: #fff5fb;
+}
+
+.table-hover tbody tr:hover td {
+    background-color: #ffe3f1;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+    border-color: #ffd1e6;
+}
+
+.btn {
+    border-radius: 999px;
+    font-weight: 700;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-width: 2px;
+}
+
+.btn-primary {
+    background-color: #ff69b4;
+    border-color: #ff69b4;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #e7549f;
+    border-color: #e7549f;
+}
+
+.btn-success {
+    background-color: #ff8fc7;
+    border-color: #ff8fc7;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #f06cad;
+    border-color: #f06cad;
+}
+
+.btn-outline-primary {
+    color: #d63384;
+    border-color: #ff8fc7;
+}
+
+.btn-outline-primary:hover {
+    background-color: #ff8fc7;
+    border-color: #ff8fc7;
+    color: #fff;
+}
+
+.btn-outline-secondary {
+    color: #9b4d73;
+    border-color: #ffb6d9;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #ffd6e8;
+    border-color: #ffb6d9;
+    color: #6f2d50;
+}
+
+.btn-danger {
+    background-color: #ff5c8a;
+    border-color: #ff5c8a;
+}
+
+.btn-danger:hover {
+    background-color: #e64a78;
+    border-color: #e64a78;
+}
+
+.form-control,
+.form-select {
+    border: 2px solid #ffd1e6;
+    border-radius: 18px;
+    background-color: #fffafd;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #ff8fc7;
+    box-shadow: 0 0 0 0.25rem rgba(255, 143, 199, 0.25);
+}
+
+label {
+    color: #b0306f;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.card::before,
+.page-card::before {
+    content: "🎀";
+    display: block;
+    background: #ffd6e8;
+    color: #d63384;
+    padding: 8px 18px;
+    font-size: 24px;
+    border-bottom: 2px dashed #ff8fc7;
+}
+
+.app-footer {
+    padding: 18px 0;
+    background: linear-gradient(90deg, #ffd6e8, #ffb6d9, #ffd6e8);
+    color: #8a2f5f;
+    font-weight: 700;
+    border-top: 3px solid #fff;
+    box-shadow: 0 -6px 18px rgba(255, 105, 180, 0.15);
+}
+
+.app-footer p::before {
+    content: "♡ ";
+}
+
+.app-footer p::after {
+    content: " ♡";
+}
+
+@media (max-width: 768px) {
+    body::before {
+        font-size: 30px;
+        letter-spacing: 18px;
+    }
+
+    .card-body {
+        padding: 18px;
+    }
+
+    h1,
+    .h3,
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 6px;
+    }
+
+    .d-flex.gap-2,
+    .d-flex.justify-content-between {
+        flex-direction: column;
+        align-items: stretch !important;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
+}
