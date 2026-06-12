@@ -1,0 +1,18 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "orientation": "any",
+  "start_url": "weather.html",
+  "name": "Marta 57728",
+  "short_name": "Marta 57728",
+  "version": "pl.edu.zut.wi.mm57728",
+  "description": "Weather App",
+  "author": "Marta Milka",
+  "icons": [
+    {
+      "src": "res/electron/icon.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ]
+}

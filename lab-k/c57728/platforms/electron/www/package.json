@@ -1,0 +1,14 @@
+{
+  "main": "cdv-electron-main.js",
+  "name": "pl.edu.zut.wi.mm57728",
+  "displayName": "Marta 57728",
+  "version": "1.0.0",
+  "description": "Weather App",
+  "homepage": "https://www.wi.zut.edu.pl",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Marta Milka",
+    "email": "mm57728@zut.edu.pl"
+  },
+  "dependencies": {}
+}

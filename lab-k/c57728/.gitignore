@@ -1,0 +1,10 @@
+*.apk
+*.zip
+*.exe
+*.dmg
+*.deb
+*.rpm
+*.msi
+*.app
+dist/
+build/

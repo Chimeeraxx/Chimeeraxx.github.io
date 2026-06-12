@@ -1,0 +1,18 @@
+{
+  "browserWindow": {
+    "height": 600,
+    "webPreferences": {
+      "devTools": false,
+      "nodeIntegration": false
+    },
+    "width": 1024,
+    "autoHideMenuBar": true
+  },
+  "browserWindowInstance": {
+    "loadURL": {
+      "url": "weather.html"
+    }
+  },
+  "scheme": "file",
+  "hostname": "localhost"
+}
